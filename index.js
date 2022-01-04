@@ -35,4 +35,15 @@ class ContaBrancaria{
     }
 }
 
+//Conta Normal
 let conta= new ContaBrancaria(1000,1000,1);
+
+//Classe de Conta Especial
+class contaEspecial extends ContaBrancaria{
+    constructor(contaCorrente,contaPoupanca,jurosPoupanca){
+        super(contaCorrente,contaPoupanca,jurosPoupanca*2)  //jurosPoupanca * 2
+    }
+}
+
+//Conta2 ESPECIAL
+let conta2= new contaEspecial(15000,50000,1);
